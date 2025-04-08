@@ -1,6 +1,6 @@
 ## WWL Tenants - Terms of Use
 
-If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training. 
+
 
 Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension. 
 
@@ -14,7 +14,7 @@ As Adatum's Microsoft 365 administrator, you have been tasked with deploying Mic
 
 In your lab environment, your lab hosting provider has already obtained a Microsoft 365 trial tenant for you. Your lab provider has also created two admin accounts that you will use in your VM lab environment: 
 
-- An AD DS administrator account for Adatum's on-premises environment (Adatum\Administrator).
+
 - A default tenant admin account in Microsoft 365 (the display name for this user account is MOD Administrator). 
 
 You will log into the Client 1 PC (LON-CL1) using the Adatum\Administrator account. When you access Microsoft 365 for the first time, you will initially log in using the Microsoft 365 tenant admin account (MOD Administrator). You will then update Adatum's Microsoft 365 organizational profile, and you'll prepare your tenant for Microsoft Entra ID, and for later labs using Information Rights Management, audit alerts, and Microsoft Graph PowerShell.
