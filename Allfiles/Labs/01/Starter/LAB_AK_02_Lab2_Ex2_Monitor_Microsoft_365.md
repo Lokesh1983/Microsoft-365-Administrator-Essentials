@@ -179,4 +179,3 @@ If an organization runs into a situation in Microsoft 365 where it needs assista
 8. Leave LON-CL1 and your Edge browser open for the next lab exercise.  
 
 
-# Proceed to Lab 2 - Exercise 3
