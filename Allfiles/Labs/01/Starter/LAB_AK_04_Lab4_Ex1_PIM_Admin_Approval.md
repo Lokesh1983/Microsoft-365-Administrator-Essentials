@@ -30,41 +30,39 @@ Holly Dickson, Adatum's new Microsoft 365 Administrator, wants to use Privileged
 
 Holly also wants to update the notification settings for the Global admin role. Privileged Identity Management (PIM) lets you know when important events occur in your Microsoft Entra ID organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. These emails can also include links to relevant tasks, such as activating or renewing a role. In this task, Holly wants to update the notifications to ensure that approvals are tracked in real-time in a proactive manner.
 
-1. The prior lab exercise used Adatum's domain controller (LON-DC1). This lab will use LON-CL1.  <br/>
+1. Login to **LON-CL1**. 
 
-    Switch back to **LON-CL1**. 
+3. On **LON-CL1**, you should still be logged into the machine as the domain **adatum\administrator** account, and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
 
-2. On **LON-CL1**, you should still be logged into the machine as the domain **adatum\administrator** account, and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
+4. In your browser, select the **Microsoft 365 admin center** tab. In the navigation pane under the **Admin centers** section, select **Identity**.
 
-3. In your browser, select the **Microsoft 365 admin center** tab. In the navigation pane under the **Admin centers** section, select **Identity**.
+5. If a **Sign in to Microsoft Entra** tab opens in your browser displaying the **Pick an account** window, select Holly's account, and in the **Enter password** window, enter the New Administrative Password that you assigned to Holly's account. 
 
-4. If a **Sign in to Microsoft Entra** tab opens in your browser displaying the **Pick an account** window, select Holly's account, and in the **Enter password** window, enter the New Administrative Password that you assigned to Holly's account. 
+6. On the **Stay signed in?** window, select **Don't show this again** and then select **Yes**.
 
-5. On the **Stay signed in?** window, select **Don't show this again** and then select **Yes**.
+7. In the **Microsoft Entra admin center**, select **Identity governance** in the navigation pane to expand this group, and then select **Privileged Identity Management**.
 
-6. In the **Microsoft Entra admin center**, select **Identity governance** in the navigation pane to expand this group, and then select **Privileged Identity Management**.
+8. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
 
-7. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Microsoft Entra roles**.
+9. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
 
-8. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
-
-9. In the **Adatum Corporation | Settings** window, select the **Global Administrator** role. <br/>
+10. In the **Adatum Corporation | Settings** window, select the **Global Administrator** role. <br/>
 
     **Tip:** If the roles are not displayed in alphabetical order, select the **Role** heading to sort them in ascending alphabetical order. This will make it easier to locate the Global administrator role.
 
-10. In the **Role setting details -  Global Administrator** window, scroll through the page and review the information for role activation, assignment, and notification. Then select **Edit** on the menu bar at the top of the page.
+11. In the **Role setting details -  Global Administrator** window, scroll through the page and review the information for role activation, assignment, and notification. Then select **Edit** on the menu bar at the top of the page.
 
-11. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, below the activation slider, verify the **Azure MFA** option is selected by default for the **On activation, require** setting (if it's not selected, then select it now). This will require that the person requesting activation of the role will have to sign in using multi-factor authentication to provide additional verification that they are who they say they are.
+12. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, below the activation slider, verify the **Azure MFA** option is selected by default for the **On activation, require** setting (if it's not selected, then select it now). This will require that the person requesting activation of the role will have to sign in using multi-factor authentication to provide additional verification that they are who they say they are.
 
-12. The window then displays a group of three settings, each of which has a corresponding check box. Select the **Require approval to activate** check box. By doing so, the **Select approver(s)** section becomes enabled. Do not change the default settings of the other two check boxes.
+13. The window then displays a group of three settings, each of which has a corresponding check box. Select the **Require approval to activate** check box. By doing so, the **Select approver(s)** section becomes enabled. Do not change the default settings of the other two check boxes.
 
-13. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** window that opens, you would normally scroll through the list of users and select **Holly Dickson**. However, since over 200 users were synchronized from the on-premises Active Directory to Microsoft Entra ID in the earlier Identity Synchronization lab exercise, scrolling through the user list will be too time consuming. <br/>
+14. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** window that opens, you would normally scroll through the list of users and select **Holly Dickson**. However, since over 200 users were synchronized from the on-premises Active Directory to Microsoft Entra ID in the earlier Identity Synchronization lab exercise, scrolling through the user list will be too time consuming. <br/>
 
     Therefore, enter **Holly** in the **Search** box. In the list of users whose first name starts with Holly, select Holly Dickson's user account that pertains to the onmicrosoft.com domain (**Holly@xxxxxZZZZZZ.onmicrosoft.com**). Do NOT select Holly's user account that applies to the custom domain. Then select the **Select** button.
 
-14. In the **Edit role setting - Global Administrator** window, select the **Notification** tab at the top of the page.
+15. In the **Edit role setting - Global Administrator** window, select the **Notification** tab at the top of the page.
 
-15. On the **Notification** tab, note the three activities that can trigger a notification being sent: **Send notifications when...**    <br/>
+16. On the **Notification** tab, note the three activities that can trigger a notification being sent: **Send notifications when...**    <br/>
 
     - members are assigned as eligible to this role
     - members are assigned as active to this role
@@ -74,9 +72,9 @@ Holly also wants to update the notification settings for the Global admin role. 
 
     In the **Additional recipients** field for each of the three alerts (the **Role assignment alert** for the first two activities and the **Role activation alert** for the final activity), enter the MOD administrator's email ID of **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
 
-16. At the bottom of the **Edit role setting - Global Administrator** window, select **Update**.
+17. At the bottom of the **Edit role setting - Global Administrator** window, select **Update**.
 
-17. Leave all browser tabs open for the next task.
+18. Leave all browser tabs open for the next task.
 
 
 ### Task 2 - Assign an eligible group to the Global Admin role
