@@ -133,6 +133,6 @@ To test the Conditional Access policy that you just created, you will sign-out o
 
 24. Remain signed into LON-CL1 with the **Microsoft 365 admin center** open in your browser.
 
-# Proceed to Lab 3 - Exercise 2
+
 
 
